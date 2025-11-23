@@ -1,0 +1,128 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Front-End Website</title>
+    <meta
+      property="og:image"
+      content="https://bolt.new/static/og_default.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://bolt.new/static/og_default.png"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <img src="Screenshot_3.png" alt="Header Banner" class="header-image" />
+        <div class="header-overlay">
+          <h1>Front-End Development Studio</h1>
+          <p>Crafting Beautiful Web Experiences</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Responsive Design</h3>
+            <p>Creating websites that look perfect on all devices</p>
+            <button
+              class="cta-button"
+              data-message="Responsive design ensures your website adapts beautifully to any screen size!"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="service-card">
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and engaging user interfaces</p>
+            <button
+              class="cta-button"
+              data-message="Great UI/UX design puts your users first and creates memorable experiences!"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="service-card">
+            <h3>Performance Optimization</h3>
+            <p>Making your website lightning fast</p>
+            <button
+              class="cta-button"
+              data-message="Speed matters! A fast website keeps users engaged and improves SEO!"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-content">
+          <img
+            src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Satisfied Customer"
+            class="customer-image"
+          />
+          <div class="testimonial-text">
+            <p>
+              "Working with this team transformed our online presence. The
+              attention to detail and technical expertise is outstanding!"
+            </p>
+            <p class="customer-name">— Sarah Johnson, Tech Startup CEO</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="technologies">
+        <h2>Technologies We Master</h2>
+        <div class="tech-grid">
+          <div class="tech-card">HTML5</div>
+          <div class="tech-card">CSS3</div>
+          <div class="tech-card">JavaScript</div>
+          <div class="tech-card">React</div>
+          <div class="tech-card">Vue.js</div>
+          <div class="tech-card">Tailwind</div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's build something amazing together</p>
+        <button
+          class="cta-button large"
+          data-message="Thank you for your interest! Our team will contact you within 24 hours."
+        >
+          Get Started
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Front-End Development Studio. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <p id="popup-message"></p>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
