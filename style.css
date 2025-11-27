@@ -53,40 +53,53 @@ p {
   width: 100%;
   height: 500px;
   overflow: hidden;
+  background: linear-gradient(135deg, #1a0000 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-content {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
-  transition: transform 0.5s ease;
+.header-logo {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.2));
 }
 
-.header:hover .header-image {
-  transform: scale(1.05);
+.header:hover .header-logo {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 50px rgba(255, 0, 0, 0.4));
 }
 
 .header-overlay {
   position: absolute;
-  top: 50%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
   width: 90%;
   z-index: 2;
 }
 
+.header-overlay h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.5rem;
+}
+
 .header-overlay p {
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #ffcccc;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .main-content {
